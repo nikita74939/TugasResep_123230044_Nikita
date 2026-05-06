@@ -26,8 +26,6 @@ class _FavoritePageState extends State<FavoritePage> {
     _favorites = _repo.getAllFavorites();
   }
 
-  /// Dipanggil setiap kali tab ini aktif, agar list selalu fresh
-  /// (misalnya user hapus favorit dari Detail Page lalu kembali ke sini).
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
